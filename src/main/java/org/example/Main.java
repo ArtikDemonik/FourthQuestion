@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int[] array = new int[5];
         Scanner in = new Scanner(System.in);
+        System.out.print("Type lenght of array: ");
+
+        int[] array = new int[in.nextInt()];
+
         for(int i = 0; i < array.length; i++){
-            System.out.printf("Type %d element (as int):", i);
+            System.out.printf("Type %d element (as int): ", i);
             array[i] = in.nextInt();
         }
         int sum = 0;
